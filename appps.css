@@ -65,12 +65,12 @@ main {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: hsl(212, 21%, 14%);
 }
 
 p {
-  font-size: 2.21rem;
+  font-size: 1.7rem;
   color: hsl(228, 12%, 48%);
 }
 
@@ -86,7 +86,7 @@ p {
 .price p {
   text-decoration: line-through;
   position: relative;
-  top: 0.5rem;
+  top: 1rem;
   font-size: 1.3rem;
 }
 

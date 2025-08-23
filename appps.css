@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mini {
+  width: 14px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+}
+
+main {
+  background-color: hsl(30, 38%, 92%);
+  padding: 2rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 4rem;
+  color: hsl(212, 21%, 14%);
+}
+
+p {
+  font-size: 2.21rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.price h2 {
+  color: hsl(158, 36%, 37%);
+}
+
+.price p {
+  text-decoration: line-through;
+  position: relative;
+  top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.pic {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.image-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+main {
+  margin: 0 auto;
+  padding: 3rem 6rem;
+}
+
+/*page responsiveness*/
+@media (min-width: 375px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (min-width: 681px) {
+  html {
+    font-size: 50%;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image-container {
+    background-image: url("images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .price p {
+    top: 2rem;
+  }
+  main {
+    padding: 10rem;
+  }
+  .pic {
+    visibility: hidden;
+  }
+
+  .details {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  .btn:hover {
+    background-color: hsl(158, 41%, 18%);
+  }
+}
+
+@media (min-width: 796px) {
+  main {
+    padding: 17rem;
+  }
+}
+
+@media (min-width: 904px) {
+  main {
+    padding: 24rem;
+  }
+}

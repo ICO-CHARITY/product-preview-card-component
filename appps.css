@@ -20,6 +20,55 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+.mini {
+  width: 14px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+
+main {
+  background-color: hsl(30, 38%, 92%);
+  padding: 2.5rem 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.product {
+  font-size: 1.3rem;
+  letter-spacing: 3.5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  gap: 1rem;
+  font-weight: 600;
+}
+
 h2 {
   font-size: 3.3rem;
   color: hsl(212, 21%, 14%);
@@ -56,54 +105,6 @@ p {
   width: 100%;
 }
 
-img {
-  max-width: 100%;
-}
-
-.mini {
-  width: 14px;
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-}
-
-main {
-  background-color: hsl(30, 38%, 92%);
-  padding: 2.5rem 1.5rem;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 8px;
-  background-color: hsl(0, 0%, 100%);
-}
-
-.product {
-  font-size: 1.3rem;
-  letter-spacing: 3.5px;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1.5rem;
-  padding: 2rem 2rem;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: hsl(158, 36%, 37%);
-  border-radius: 8px;
-  gap: 1rem;
-  font-weight: 600;
-}
-
 /*page responsiveness*/
 
 @media (min-width: 716px) {
@@ -112,15 +113,19 @@ main {
   }
 
   main {
-    padding: 11.5rem;
+    padding: 6rem;
   }
 
   h2 {
-    font-size: 5.9rem;
+    font-size: 7.3rem;
   }
 
   p {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
+  }
+
+  .mini {
+    font-size: 1.5rem;
   }
 
   .product-container {
@@ -152,37 +157,45 @@ main {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 820px) {
+  html {
+    font-size: 50%;
+  }
   h2 {
     font-size: 7rem;
   }
   main {
-    padding: 19rem;
+    padding: 8rem;
   }
   .product {
     font-size: 1.6rem;
   }
 }
 
-@media (min-width: 1002px) {
+@media (min-width: 950px) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 
-  p {
-    font-size: 3rem;
-  }
   main {
-    padding: 15rem;
+    padding: 4rem;
   }
 }
 
-@media (min-width: 1113px) {
+@media (min-width: 1012px) {
   h2 {
-    font-size: 7.5rem;
+    font-size: 7rem;
   }
   main {
-    padding: 20rem;
-    max-width: 1200px;
+    padding: 12rem;
+  }
+}
+
+@media (min-width: 1128px) {
+  h2 {
+    font-size: 9rem;
+  }
+  main {
+    padding: 19rem;
   }
 }

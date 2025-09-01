@@ -21,21 +21,20 @@ ul {
 }
 
 img {
-  max-width: 1200px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .mini {
   width: 14px;
   color: hsl(0, 0%, 100%);
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 main {
   background-color: hsl(30, 38%, 92%);
-  padding: 2rem 2rem;
-  width: 100%;
+  padding: 2.5rem 1.5rem;
   margin: 0 auto;
+  width: 100%;
 }
 
 .container {
@@ -44,6 +43,11 @@ main {
   margin: 0 auto;
   border-radius: 8px;
   background-color: hsl(0, 0%, 100%);
+}
+
+.product {
+  font-size: 1.3rem;
+  letter-spacing: 3.5px;
 }
 
 .details {
@@ -56,22 +60,24 @@ main {
 
 .btn {
   display: flex;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   background-color: hsl(158, 36%, 37%);
   border-radius: 8px;
+  gap: 1rem;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.3rem;
   color: hsl(212, 21%, 14%);
 }
 
 p {
-  font-size: 2.21rem;
+  font-size: 1.83rem;
   color: hsl(228, 12%, 48%);
+  line-height: 1.5;
 }
 
 .price {
@@ -86,7 +92,7 @@ p {
 .price p {
   text-decoration: line-through;
   position: relative;
-  top: 0.5rem;
+  top: 1rem;
   font-size: 1.3rem;
 }
 
@@ -95,26 +101,33 @@ p {
 }
 
 .image-container {
-  max-width: 600px;
+  max-width: 1200px;
   width: 100%;
 }
 
-main {
-  margin: 0 auto;
-  padding: 3rem 6rem;
-}
-
 /*page responsiveness*/
-@media (min-width: 375px) {
+
+@media (min-width: 716px) {
   html {
     font-size: 43.75%;
   }
-}
 
-@media (min-width: 681px) {
-  html {
-    font-size: 50%;
+  main {
+    padding: 6rem;
   }
+
+  h2 {
+    font-size: 7.3rem;
+  }
+
+  p {
+    font-size: 2.9rem;
+  }
+
+  .mini {
+    font-size: 1.5rem;
+  }
+
   .product-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -128,24 +141,15 @@ main {
   }
 
   .price p {
-    top: 2rem;
+    top: 3rem;
   }
-  main {
-    padding: 10rem;
-  }
+
   .pic {
     visibility: hidden;
   }
 
   .details {
-    padding: 2rem;
-  }
-
-  h2 {
-    font-size: 5rem;
-  }
-  p {
-    font-size: 2rem;
+    padding: 3rem;
   }
 
   .btn:hover {
@@ -153,14 +157,49 @@ main {
   }
 }
 
-@media (min-width: 796px) {
+@media (min-width: 820px) {
+  html {
+    font-size: 50%;
+  }
+  h2 {
+    font-size: 7rem;
+  }
   main {
-    padding: 17rem;
+    padding: 8rem;
+  }
+  .product {
+    font-size: 1.6rem;
   }
 }
 
-@media (min-width: 904px) {
+@media (min-width: 950px) {
+  html {
+    font-size: 56.25%;
+  }
+
   main {
-    padding: 24rem;
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1012px) {
+  h2 {
+    font-size: 7rem;
+  }
+  main {
+    padding: 12rem;
+  }
+}
+
+@media (min-width: 1128px) {
+  h2 {
+    font-size: 9rem;
+  }
+  main {
+    padding: 19rem;
+  }
+
+  .container {
+    max-width: 1200px;
   }
 }
